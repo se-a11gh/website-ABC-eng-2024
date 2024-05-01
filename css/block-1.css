@@ -1,0 +1,281 @@
+
+
+/* Block-1 / ГОЛОВНИЙ БЛОК */
+.abc-main {
+    width: 100%;
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+.Block-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../media/fonMain22.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.block1_welck{
+    width: 100%;
+    text-align: center;
+    margin-top: 600px;
+}
+.abc-header__contacts {
+    transform: translate(97px, 0);
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-name: anim1;
+}
+@keyframes anim1{
+    100%{transform: translate(0, 0);}
+}
+.abc-header__menu {
+    transform: translate(-97px, 0);
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-name: anim2;
+}
+@keyframes anim2{
+    100%{transform: translate(0, 0);}
+}
+.block1_welck {
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-name: anim3;
+}
+@keyframes anim3{
+    100%{margin-top: 150px;}
+}
+h1{
+    color: var(--colr_Y);
+    font-size: 60px;
+}
+.btn_free{
+    border: none;
+    width: 360px;
+    height: 70px;
+    margin-top: 40px;
+    border-radius: 40px;
+    font-size: 22px;
+    color: white;
+    background-color: var(--colr_P);
+    box-shadow: 0px 1px 5px  var(--colr_P);
+    cursor: pointer;
+    transition: background 0.9s;
+}.btn_free:hover{
+    background-color: var(--colr_PDrk);
+}
+.wrapp_form_free_less, .wrapp_form__signIn{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.form_free_less{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    max-width: 600px;
+    height: 350px;
+    background-color: white;
+    padding: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+}.form_free_less p{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.form_free_less > div{
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 85px;
+    height: 85px;
+    padding: 34px;
+    box-sizing: border-box;
+    background-color: var(--colr_head3);
+    border-radius: 50%;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-name: free_btnclose;
+}
+@keyframes free_btnclose{
+    100%{top: -16px; right: -16px;}
+}
+.form_free_less form input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border:none;
+    outline: 1px solid #9fdcff;
+    background-color: #9fdcff;
+}
+.form_free_less form input:focus{
+    background-color: #64b5e4;
+    font-weight: bold;
+}
+.form_free_less form .btn_free_send{
+    background-color:  var(--colr_Y);
+    color: white;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: background 0.9s;
+    outline: 1px solid  var(--colr_Y);
+    font-size: 17px;
+    font-weight: bold;
+}.form_free_less form .btn_free_send:hover{
+    background-color: var(--colr_Y2);
+}
+.btn_close_free{
+    width: 20px;
+    cursor: pointer;
+}
+.form__signIn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    max-width: 600px;
+    height: 350px;
+    background-color: white;
+    padding: 35px;
+    box-sizing: border-box;
+    overflow: hidden;
+}.form__signIn p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.form__signIn p span{
+    color: #eaac10;
+    font-family:"RubikMonoOne-Regular";
+    font-size: 15px;
+    font-weight: normal;
+}
+.form__signIn > div {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    height: 65px;
+    padding: 24px;
+    box-sizing: border-box;
+    background-color: var(--colr_head3);
+    border-radius: 50%;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-name: sign_btnclose;
+}
+@keyframes sign_btnclose{
+    100%{top: -16px; right: -16px;}
+}
+.form__signIn form input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border:none;
+    outline: 1px solid #9fdcff;
+    background-color: #9fdcff;
+}
+.form__signIn form p{
+    color: #424242;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.form__signIn form input:focus{
+    background-color: #64b5e4;
+    font-weight: bold;
+}
+.form__signIn form .btn_sign_send{
+    background-color: var(--colr_Y);
+    color: white;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: background 0.9s;
+    outline: 1px solid  var(--colr_Y);
+    font-size: 17px;
+    font-weight: bold;
+}.form__signIn form .btn_sign_send:hover{
+    background-color: var(--colr_Y2);
+}
+.btn_close_sign{
+    width: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Адаптив */
+@media(max-width:960px){
+.btn_free {
+    width: 345px;
+    height: 60px;
+    margin-top: 30px;
+    font-size: 21px;
+}
+h1 {
+    font-size: 50px;
+}
+}
+
+@media(max-width:800px){
+h1 {
+    font-size: 45px;
+}
+.Block-1 {
+    height: 85vh;
+}
+.btn_free {
+    width: 315px;
+    height: 55px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+}
+
+@media(max-width:550px){
+.Block-1 {
+    height: 70vh;
+}
+h1 {
+    font-size: 40px;
+}
+.btn_free {
+    width: 280px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+}
+
+@media (max-width:500px){
+.form_free_less {
+    padding: 30px;
+}
+}

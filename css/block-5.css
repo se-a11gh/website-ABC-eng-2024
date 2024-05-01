@@ -1,0 +1,398 @@
+
+/* Блок-5 (ЯК ПРОХОДЯТЬ ЗАНЯТТЯ)*/
+.Block-5{
+    width: 100%;
+    background-image: url('../media/kidsFone2.png'), url('../media/kidsFone2.png');
+    background-position: 30% 15%, 110% 45%;
+    background-repeat: no-repeat;
+    background-size: 450px;
+}
+h3{
+    width: 90%;
+    font-size: 25px;
+    padding: 10px 35px 10px 35px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px auto 20px auto;
+    font-weight: normal;
+}
+.wrapp_block5{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 50px 0 50px 0;
+}.wrapp_block5 > img{ 
+    width: 400px;
+}
+
+.Block-5 .actv > img{ 
+    width: 450px;
+}  
+
+.aboutLessn__content{
+    width: 400px;
+    font-size: 20px;    
+}
+.aboutLessn__content p:first-child{
+    font-size: 21px;
+    font-weight: bold;
+    color: #1276bd;  
+    padding-bottom: 12px;
+    box-sizing: border-box;  
+}
+.bl5_video{
+    display: flex;
+    width: 700px;
+    margin: auto;
+}.bl5_video p{
+    font-size: 21px;
+    font-weight: bold;
+    color: #1276bd; 
+}
+.bl5_video > div img{
+    width: 80px;
+    transform: rotate(-11deg);
+    margin-left: 115px;
+}
+.bl5_video > div{
+    margin-right: 20px;
+}
+.wrapp_btn_video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ff7dad;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: videoAnim1;
+}
+@keyframes videoAnim1{
+    0%{background-color: #DB2365;}
+    100%{background-color: #ff7dad;}
+}
+.btn_video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ff7dad;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: videoAnim2;
+}
+@keyframes videoAnim2{
+    0%{background-color: #ff7dad;}
+    100%{background-color: #DB2365;}
+}
+.btn_video:hover, .wrapp_btn_video:hover{
+    animation-duration: 0.5s;
+    cursor: pointer;
+}
+.wrapp_btn_video > div img{
+    width: 40px;
+    transform: rotate(0deg);
+    margin: 0;
+}
+.video_block_fon{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.video_block_fon video{
+    width: 90vw;
+    height: 80vh;
+}
+.video_block_fon img{
+    width: 40px;
+    margin: 15px;
+    cursor: pointer;
+}
+.wrapp_switch_block{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 885px;
+    margin: auto;
+}
+.switch_content{
+    position: relative;
+    left: 0%;
+    display: flex;
+    width: 200%;
+}
+.switch_content_group_1{ 
+    width: 100%;
+}
+.bl_switch {
+    width: 250px;
+    margin: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 1s;
+    border:1px solid rgb(193, 93, 228);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.dayCircle1{
+    order: 1;
+    background-color: rgb(162 50 201); 
+    color: white;
+}
+.dayCircle2{
+    color:rgb(162 50 201);
+}
+.type_lesson1{
+    background: none; 
+    border:1px solid #4886FD; 
+    color:#4886FD;
+}
+.type_lesson2{
+    background-color: #4886FD; 
+    border:1px solid #4886FD; 
+    color:white;
+}
+.wrap_bl_switch{
+    order: 2;
+}
+.switch_block{
+    width: 100%;
+    overflow: hidden;
+    order: 3;
+}
+.wrap_bl_switch{
+    display: flex;
+    align-items: center;
+}.wrap_bl_switch p{
+   margin-right: 5px;
+}
+.text1{
+    background-color: #D2E1FF;
+}
+.text2{
+    background-color: #f2ceff;
+}
+.swch_cont_about{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.swch_cont_about__photo{
+    width: 430px;
+}.swch_cont_about__photo img{
+    width: 100%;
+    height: 100%;   
+}
+.swch_cont_about__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 18px;
+    height: 330px;
+}.swch_cont_about__text ul li{
+    margin-top: 5px;
+}
+.swch_cont_about__text div{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.btn_more_shedl{
+    display: block;
+    border: none;
+    background-color: var(--colr_P);
+    font-size: 16px;
+    color: white;
+    height: 45px;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+/* Адаптив */
+@media (max-width:950px){
+.orderPlace1{ 
+    order: 2;
+    margin: 20px 0 20px 0;
+}
+.orderPlace2{ 
+    order: 1;
+}
+.orderPlace3{ 
+    order: 3;
+}
+.orderPlace4{ 
+    order: 4;
+    margin: 20px 0 20px 0;
+}
+.aboutLessn__content {
+    width: 550px;
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+}
+.bl5_video {
+    width: 100%;
+    justify-content: center;
+    order: 5;
+    margin: 20px 10px 20px 10px;
+}
+.wrapp_block5 {
+    margin: 0 0 50px 0;
+}
+}
+
+
+@media (max-width:930px){
+h3 {
+    font-size: 23px;
+}
+.swch_cont_about {
+    flex-direction: column;
+    margin: 0;
+}
+.wrapp_switch_block {
+    width: 100%;
+}
+.swch_cont_about__photo {
+    width: 535px;
+}
+.switch_block {
+    width: 555px;
+}
+.bl_switch {
+    width: 450px;
+    margin: 5px 0px;
+}
+.wrap_bl_switch {
+    flex-direction: column;
+}
+.Block-6{
+    margin-top: 0;
+}
+}
+
+
+@media(max-width:600px){
+.aboutLessn__content {
+    width: 100%;
+}
+.wrapp_block5 > img {
+    width: 70%;
+}
+.Block-5 .actv > img{ 
+    width: 80%;
+}
+.swch_cont_about__photo {
+    width: 100%;
+}
+h3 {
+    font-size: 22px;
+    width: 100%;
+    padding: 10px;
+}
+.dayCircle1 {
+    top: -65px;
+}
+.bl_switch {
+    width: 85%;
+}
+.wrap_bl_switch {
+    width: 100%;
+    top: -55px;
+}
+
+.Block-6 {
+    margin-top: -75px;
+}
+}
+
+
+@media (max-width:500px){
+.swch_cont_about__text {
+    padding: 10px;
+    font-size: 16px;
+    height: 275px;
+}
+.btn_more_shedl {
+    font-size: 15px;
+    height: 40px;
+}
+h3 {
+    font-size: 20px;
+    padding: 10px;
+}
+.aboutLessn__content {
+    font-size: calc(var(--index) * 1.5);
+}
+.aboutLessn__content p:first-child{
+    font-size: calc(var(--index) * 1.6);
+}
+.Block-5 {
+    background-position: -30% 15%, 170% 45%;
+    background-size: 300px;
+}
+.wrapp_btn_video {
+    width: 70px;
+    height: 70px;
+}
+.bl5_video > div {
+    margin-right: 0px;
+}
+.btn_video {
+    width: 55px;
+    height: 55px;
+}
+.bl5_video p {
+    font-size: 18px;
+}
+.bl5_video > div img {
+    width: 60px;
+    margin-left: 145px;
+}
+.wrapp_btn_video > div img {
+    width: 28px;
+    transform: rotate(0deg);
+    margin: 0;
+}
+.Block {
+    margin-top: 15px;
+}
+.bl_h2 {
+    font-size: 20px;
+}
+.bl5_video {
+    width: 100%;
+    justify-content: space-evenly;
+    order: 5;
+    margin: 20px 0 20px 0;
+}
+.Block-6 {
+    margin-top: -45px;
+}
+}
+
+
+@media (max-width:420px){
+.swch_cont_about__text {
+    font-size: 15px;
+}
+}

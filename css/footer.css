@@ -1,0 +1,200 @@
+
+/* Футер */
+.abc-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 100%;
+    background-image: url("../media/london.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    cursor: default;
+}
+.wrapp_footer-content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1250px;
+    width: 97%;
+    height: 280px;
+}
+.footer_list{
+    width: 300px;
+    height: 250px;
+}
+.footer_contacts{
+    width: 50%;
+}
+.footer_menu p, .footer_contacts p, .footer_registr p{
+    margin-top: 5px;
+    color: #eaac10;
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer_menu ul, .footer_contacts ul, .footer_registr ul{
+  line-height: 27px;
+}.footer_menu ul li:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+.block_footrSoc {
+  display: flex;
+}
+.block_footrSoc svg{
+    width: 23px;
+    height: 23px;
+    margin: 5px;
+    fill: white;
+}
+.block_pay{
+    margin-top: 20px;
+}
+.btn_pay{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 220px;
+    height: 45px;
+    border: 1px solid var(--colr_B);
+    background: rgba(94, 158, 255, 0.2);
+    border-radius: 30px;
+    padding: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+}.btn_pay:hover{
+    background-color: var(--colr_B);
+    transition: background 0.9s;
+}
+.btn_pay img{
+    width: 35px;
+    height: 35px;
+}
+.block_pay_img Img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+.block_pay_img Img:last-child{
+    width: 55px;
+    height: 20px;
+}
+.footer_list ul li{
+    color: white;
+    font-size: 17px;
+    font-weight: normal;
+    margin-top: 10px;
+    cursor: pointer;
+}.footer_list ul li:hover{
+    font-weight: bold;
+}
+.footer_downPanel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #121212;
+}.footer_downPanel p{
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Адаптив */
+@media(max-width:850px){
+.footer_menu ul, .footer_contacts ul, .footer_registr ul {
+    line-height: 19px;
+}
+.footer_menu p, .footer_contacts p, .footer_registr p {
+    font-size: 17px;
+}
+.footer_list ul li {
+    font-size: 15px;
+}
+.block_footrSoc svg {
+    width: 20px;
+    height: 20px;
+}
+.footer_downPanel p {
+    font-size: 14px;
+}
+.block_pay_img Img:last-child {
+    width: 40px;
+    height: 15px;
+    margin: 5px;
+}
+.block_pay_img Img {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+.btn_pay {
+    width: 180px;
+    height: 40px;
+    font-size: 13px;
+}.btn_pay img {
+    width: 27px;
+    height: 27px;
+}
+
+.footer_list {
+    width: 190px;
+    height: 190px;
+}
+.footer_contacts {
+    width: 40%;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+}
+
+@media(max-width:650px){
+.wrapp_footer-content {
+    height: auto;
+    flex-direction: column;
+}
+.footer_list, .footer_contacts{
+    width: 90%;
+    border-top: 1px solid white;
+}
+.footer_contacts{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+}    
+
+@media(max-width:500px){
+.comm span {
+    font-size: 22px;
+}
+}
+
+
+
+
+
+
+/* Анимация-2 */
+.actv img:first-child,  .actv .bl6_adress__photo2 img{
+    transform: scale(1);
+    transition: all 1s;
+}
+.actv p {
+    left: 25px;
+    transition: all 1.5s;
+}
+.Block-4 .actv {
+    opacity: 1;
+    transition: all 1.3s;
+}
+.wrapp_timer .actv, .actv .bl6_about__p{
+    opacity: 1;
+    transition: all 1.5s;
+}
+.feed_Slider .actv {
+    left: 0px;
+    transition: all 1.6s;
+}

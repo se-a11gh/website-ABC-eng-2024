@@ -1,0 +1,295 @@
+
+/* Блок-4 (НАШІ ЦІНИ)*/
+.block_text{
+    max-width: 950px;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 15px auto 30px auto;
+    font-size: 40px;
+    opacity: 0;
+}
+.wrapp_timer{
+    max-width:1150px;
+    margin: auto;
+}
+.block_text p span{
+   font-weight: bold;
+   color:  var(--colr_P);
+}
+.promo_timer{
+    margin: auto;
+    width: 400px;
+    height: 150px;
+    opacity: 0;
+    font-size: 20px;
+    font-weight: bold;
+}.promo_timer span{
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    color:  var(--colr_P);
+    margin: 0 15px 0 15px;
+}
+.promo_timer span:nth-child(1){
+    background-color:  var(--colr_P);
+    color: white;
+}
+.promo_timer span::before{
+    position: absolute;
+    margin-top: 55px;
+    color: #1e1e1e;
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+.promo_timer span:nth-child(1)::before{content: "дн.";}
+.promo_timer span:nth-child(2)::before{content: "год.";}
+.promo_timer span:nth-child(3)::before{content: "хв."; }
+.promo_timer span:nth-child(4)::before{content: "сек."; margin-left: 0px;}
+
+.promo_date span:nth-child(2){
+    margin-left: 15px;
+}
+.promo_date span:nth-child(3){
+    margin-left: 11px;
+}
+.promo_date span:nth-child(4){
+    margin-left: 12px;
+}
+
+.promo_cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.promo_card {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 350px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    color: white;
+    border-radius: 3px;
+    border:2px solid;
+    margin: 0 3px 0 3px;
+}
+.promo_card__1 {background-image: url('../media/fone1.avif');}
+.promo_card__2 {background-image: url('../media/fone2.avif');}
+.promo_card__3 {background-image: url('../media/fone3.avif');}
+.visibl .promo_card{
+    display: flex;
+}
+.promo_card > p{
+    font-size: 30px;
+    font-weight: bold;
+}
+.promo_card ul{
+    font-size: 22px;
+}
+.promo_cards .promo_card p, .promo_cards .promo_card ul {
+    opacity: 0;
+}
+.price {
+    width: 90%;
+}.price p{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}.price p span{
+    font-size: 30px;
+    font-weight: normal;
+}
+.price_promo p:first-child{
+    text-decoration: line-through;
+    font-size: 25px;
+    font-weight: normal;
+    color: gainsboro;
+}
+.price_promo p{
+    color:  var(--colr_P);
+}
+.btn_card{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: var(--colr_head3);
+    color: white;
+    font-size: 17px;
+    border-radius: 7px;
+    cursor: pointer;
+}.btn_card:hover{
+    background-color: var(--colr_B);
+    transition: background 0.9s;
+}
+.promo_cards .actv p, .promo_cards .actv ul{
+    opacity: 1;
+    transition: all 1.5s;
+}
+
+
+
+
+
+
+/* Адаптив */
+@media(max-width:1200px){
+.block_text {
+    font-size: 35px;
+}
+}
+
+@media(max-width:1100px){
+.promo_card > p {
+    font-size: 25px;
+}
+.promo_card ul {
+    font-size: 18px;
+}
+.price_promo p:first-child {
+    font-size: 21px;
+}
+.price p {
+    font-size: 27px;
+}.price p span {
+    font-size: 21px;
+}
+.promo_card {
+    width: 300px;
+    height: 400px;
+}
+}
+
+@media(max-width:960px){
+.block_text {
+    max-width: 800px;
+    font-size: 30px;
+}
+}
+
+@media(max-width:850px){
+.promo_timer span {
+    font-size: 33px;
+    margin: 0 10px 0 10px;
+}
+.promo_timer {
+    width: 335px;
+    height: 110px;
+}
+.promo_timer span::before{
+    margin-top: 45px;
+    margin-left: 5px;
+}
+.promo_card > p {
+    font-size: 20px;
+}
+.promo_card ul {
+    font-size: 16px;
+}
+.price_promo p:first-child, .price p span {
+    font-size: 18px;
+}
+.price p {
+    font-size: 23px;
+}
+.promo_card {
+    width: 265px;
+    height: 355px;
+}
+.block_text {
+    font-size: calc(var(--index) * 2);
+}
+.btn_card {
+    height: 40px;
+    font-size: 16px;
+}
+}
+
+@media(max-width:750px){
+.promo_timer {
+    width: 265px;
+    height: 100px;
+}
+.promo_timer span {
+    font-size: 29px;
+    margin: 0 2px 0 2px;
+}.promo_timer span::before{
+    margin-left: 2px;
+}
+.promo_cards {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+.promo_card {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    margin: 0;
+    padding: 20px
+}
+.price {
+    width: 200px;
+    align-self: flex-start;
+}
+.promo_card ul {
+    position: absolute;
+    top: 55px;
+    left: 51%;
+    font-size: 18px;
+}
+.promo_card > p {
+    font-size: 20px;
+    align-self: flex-start;
+    width: 200px;
+    text-align: center;
+}
+}
+
+@media(max-width:550px){
+.block_text {
+    padding: 10px;
+    font-size: 22px;
+}
+}
+
+@media(max-width:500px){
+.promo_cards {
+    width: 99%;
+}
+.promo_card > p {
+    font-size: 18px;
+}
+.price p {
+    font-size: 19px;
+}
+.btn_card {
+    height: 33px;
+    font-size: 15px;
+}
+}
+
+
+@media(max-width:450px){
+.price, .promo_card > p {
+    width: 150px;
+}
+.promo_card ul {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    font-size: 14px;
+}
+.block_text {
+    font-size: 18px;
+}
+}

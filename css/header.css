@@ -1,0 +1,242 @@
+
+/* Шапка */
+.abc-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 1150px;
+    max-width: 97%;
+    overflow: hidden;
+}
+.abc-header__logo__img{
+    display: none;
+}
+.btn_menu{
+    cursor: pointer;
+}
+.abc-header__logo__text {
+    order: 1;
+}
+.abc-header__logo__text p{
+    font-size: 27px;
+    color: #eaac10;
+    font-family:"RubikMonoOne-Regular";
+}
+.abc-header__contacts {
+    order: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 61%;
+    background: var(--colr_head1);
+    border-radius: 50px 3px 3px 0px;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.aside_info__soc{
+    display: flex;
+    flex-wrap: wrap;
+}
+.aside_info__soc li a{
+    display: block;
+}
+.abc-header__menu {
+    order: 3;
+    width: 60%;
+    background: var(--colr_head2);
+    border-radius: 3px 0px 50px 3px;
+    color: white;
+}
+.abc-header__menu ul{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+}
+.abc-header__menu ul li{
+    padding: 14px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #1e1e1e;
+    font-weight: bold;
+    cursor: pointer;
+}
+.abc-header__menu ul li:hover{
+    transition: all 0.9s;
+    background-color: var(--colr_head3);
+    color: white;
+}
+.abc-header__signIn  {
+    order: 4;
+} 
+.abc-header__signIn p {
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+    background-color: var(--colr_Y);
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;  
+    cursor: pointer;
+} 
+.abc-header__signIn p:hover {
+   transition: all 0.9s;
+    background-color: var(--colr_Y2);
+}
+.abc-header__contacts > div{
+   display: flex;
+   align-items: center;
+   padding: 0 10px 0 10px;
+   box-sizing: border-box;
+}
+.abc-header_adress svg, .abc-header_phone svg, .aside_info__soc svg{
+   margin: 5px;
+   width: 20px;
+   height: 20px;
+   fill: rgb(213, 49, 49);
+}
+.abc-header_phone svg, .aside_info__soc svg{
+    fill: white;
+}
+.abc-header_phone div span{
+    font-weight: bold;
+    color: #eaac10;
+}
+
+
+
+/* Адаптив */
+@media(max-width:1100px){
+.abc-header__logo__text p{
+    font-size: calc(var(--index) * 1.5);
+}
+.abc-header_phone div {
+    width: 170px;
+}
+.abc-header_adress div {
+    width: 120px;
+}
+.aside_info__soc {
+    width: 60px;
+}
+}
+
+@media(max-width:960px){
+.abc-header__menu ul li {
+    padding: 14px 7px 14px 7px;
+}
+}
+
+@media(max-width:900px){
+.abc-header__logo__text p{
+    font-size: calc(var(--index) * 1.4);
+}
+.abc-header_phone div {
+    width: 170px;
+}
+.abc-header_adress div {
+    width: 113px;
+}
+
+.abc-header_phone svg {
+    width: 17px;
+    height: 17px;
+}
+.abc-header__contacts {
+    font-size: 15px;
+}
+.abc-header__menu ul li {
+    font-size: 17px;
+}
+.abc-header__signIn p {
+    padding: 7px 15px 7px 15px;
+    border-radius: 2px;
+    font-size: 17px;
+}
+.aside_info__soc {
+    width: 60px;
+}
+.aside_info__soc svg {
+    width: 17px;
+    height: 17px;
+}
+}
+
+@media(max-width:800px){
+.aside_info__soc {
+    width: auto;
+    padding: 4px 10px 4px 10px;
+    box-sizing: border-box;
+}
+.abc-header_phone div, .abc-header_adress div {
+    width: auto;
+    padding: 4px 10px 4px 10px;
+    box-sizing: border-box;
+}
+.abc-header__menu {
+    display: none;
+}
+.abc-header {
+    position: static;
+    transform: translate(0%, 0%);
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--colr_headerDop1);
+}
+.abc-header__contacts {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--colr_headerDop2); 
+    border-radius: 0px;
+    order: 4;
+    padding: 0;
+}
+.abc-header__logo__img{
+    display: block;
+    padding: 10px 5px 0px 10px;
+    box-sizing: border-box;
+}
+.abc-header__signIn {
+    padding: 10px 5px 10px 0;
+    box-sizing: border-box;
+    order: 2;
+}
+}
+
+
+@media(max-width:600px){
+.abc-header__signIn p {
+    padding: 5px 12px 5px 12px;
+    font-size: 16px;
+}
+}
+
+@media(max-width:500px){
+.abc-header__contacts {
+    font-size: 14px;
+}
+.abc-header_phone svg {
+    width: 15px;
+    height: 15px;
+}
+.aside_info__soc svg {
+    width: 15px;
+    height: 15px;
+}
+}
+
+@media(max-width:450px){
+    .abc-header__signIn p {
+        font-size: 14px;
+    }
+}
+
+
+
+
